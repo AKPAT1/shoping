@@ -1,0 +1,72 @@
+@font-face
+{
+    font-family: nazanin;
+    src: url(./font/B_NAZANIN/B-NAZANIN.TTF);
+}
+
+*
+{
+    direction: rtl;
+    font-family:nazanin;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    margin: 0px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+header
+{
+    font-size: 1em;
+}
+
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+header nav .navr
+{
+    display: flex;
+    align-items: center;
+}
+
+header nav .navr a
+{
+    color: #444;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    font-size: 1.1em;
+}
+
+header nav .navl .login
+{
+    border: 10x solid #666;
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .navl .login i
+{
+    margin: 7px;
+    color: #444;
+}
+
+header nav .navl .login a
+{
+    color: #444;
+    margin: opx 10px;
+}
