@@ -91,8 +91,7 @@ header nav .navl .login a
 
 .slider .slide .item img
 {
-    width: 1210px;
-    height: 500px;
+    width: 100%;
 }
 
 .slider .slide .item span
@@ -165,3 +164,123 @@ header nav .navl .login a
     animation-name: fadein;
 }
 /*End of Slidershow*/
+
+/*Cart*/
+.home-page 
+{
+    padding: 20px 10px;
+    font-size: 1em;
+}
+
+.home-page .shopCart
+{
+    text-align: center;
+    margin: 10px 15px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.home-page .shopCart:hover
+{
+    box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.772);
+}
+
+.shopCart .imgSec
+{
+    position: relative;
+}
+
+.shopCart .imgSec img
+{
+    width: 60%;
+}
+
+.shopCart .imgSec .star
+{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: yellow;
+}
+
+.shopCart .imgSec .offer
+{
+    background-color:#e74c3c ;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: .8em;
+}
+
+.shopCart .title
+{
+    color: #333;
+    margin: 15px;
+}
+
+.shopCart .buttons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.shopCart .buttons .right .price
+{
+    color: #666;
+    font-weight: bold;
+}
+
+.shopCart .buttons .left
+{
+    display: flex;
+}
+
+.shopCart .buttons .left .btn
+{
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(221, 198, 49);
+    color: white;
+    width: 40px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.shopCart .buttons .left .btn:hover
+{
+    width: 100px;
+}
+
+.shopCart .buttons .left .btn:hover .b-text
+{
+    display: block;
+}
+
+.shopCart .buttons .left .btn .b-text
+{
+    display: none;
+    color: white;
+}
+
+.shopCart .buttons .left .btn .b-icon
+{
+    color: white;
+    padding-top: 3px;
+}
+
+.shopCart .buttons .left .btn .b-text:hover
+{
+    display: none;
+    color: white;
+}
+/*End of Cart*/

@@ -1,53 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <title>Shop</title>
     <link rel="title icon" type="image/png" href="./photo/download-removebg-preview.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./Shop.css">
     <script src="https://kit.fontawesome.com/12da900ec5.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!--Navigation and slider-->
-    <header>
-        <nav>
-            <div class="navr">
-                <a href=""><i class="far fa-user"></i></a>
-                <a href=""><i class="fas fa-shopping-cart"></i></a>
-                <a href=""><i class="fas fa-home"></i></a>
-                <a href=""><i class="fas fa-search"></i></a>
-            </div>
-            <div class="navl">
-                <div class="login">
-                    <i class="fas fa-user"></i>
-                    <a href=""><b>ثبت نام/ ورود</b></a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="bg-secondary">
+        <!--Navigation and slider-->
+        <header>
+            <nav>
+                <div class="navr">
+                    <a href=""><i class="far fa-user"></i></a>
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    <a href=""><i class="fas fa-home"></i></a>
+                    <a href=""><i class="fas fa-search"></i></a>
+                </div>
+                <div class="navl">
+                    <div class="login">
+                        <i class="fas fa-user"></i>
+                        <a href=""><b>ثبت نام/ ورود</b></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-lg-12">
+                    <section class="slider ">
+                        <div class="slide">
+                            <div class="item active" id="slide1">
+                                <img src="./photo/photo-1505740420928-5e560c06d30e.avif" alt="">
+                                <span style="text-shadow:2px 2px 6px black;"> آهنگ ها را زنده تر آن چیزی که هست گوش کنید</span>
+                            </div>
+                            <div class="item " id="slide2">
+                                <img src="./photo/photo-1638389746430-82c12a2d0bb2.avif" alt="">
+                                <span style="color: black ;text-shadow: 2px 2px 6px black;">کیفیت صدایی که همیشه دنبالش بودید</span>
+                            </div>
+                            <div class="item " id="slide3">
+                                <img src="./photo/premium_photo-1681822341659-723f236cec21.avif" alt="">
+                                <span style="color: black; text-shadow: 2px 2px 6px white">رویاهاتو با صدای بلند دنبال کن</span>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <I onclick="setSlide('slide1',1)" class="fas fa-circle"></I>
+                            <I onclick="setSlide('slide2',2)" class="fas fa-circle"></I>
+                            <I onclick="setSlide('slide3',3)" class="fas fa-circle"></I>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </nav>
-        <section class="slider">
-            <div class="slide">
-                <div class="item active" id="slide1">
-                    <img src="./photo/photo-1505740420928-5e560c06d30e.avif" alt="">
-                    <span style="text-shadow:2px 2px 6px black;"> آهنگ ها را زنده تر آن چیزی که هست گوش کنید</span>
+        </header>
+        <!--End of Navigation and slider-->
+        <!--Card-->
+        <main>
+            <section class="home-page">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="shopCart bg-light">
+                            <div class="imgSec">
+                                <img src="./photo/photo-1505739718967-6df30ff369c7.avif" alt="">
+                                <span class="offer">پیشنهاد داغ</span>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                نام محصول
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">800 T</span>
+                                </div>
+                                <div class="left">
+                                    <div class="btn">
+                                        <a class="b-text" href="">علاقه  </a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="btn">
+                                        <a class="b-text" href="">خرید </a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="shopCart bg-light">
+                            <div class="imgSec">
+                                <img src="./photo/photo-1496957961599-e35b69ef5d7c.avif" alt="">
+                                <span class="offer">پیشنهاد داغ</span>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                نام محصول
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">800 T</span>
+                                </div>
+                                <div class="left">
+                                    <div class="btn">
+                                        <a class="b-text" href="">علاقه  </a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="btn">
+                                        <a class="b-text" href=""> خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="shopCart bg-light">
+                            <div class="imgSec">
+                                <img src="./photo/photo-1484704849700-f032a568e944.avif" alt="">
+                                <span class="offer">پیشنهاد داغ</span>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                نام محصول
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">800 T</span>
+                                </div>
+                                <div class="left">
+                                    <div class="btn">
+                                        <a class="b-text" href="">علاقه  </a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="btn">
+                                        <a class="b-text" href=""> خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="shopCart bg-light">
+                            <div class="imgSec">
+                                <img src="./photo/photo-1420161900862-9a86fa1f5c79.avif" alt="">
+                                <span class="offer">پیشنهاد داغ</span>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                نام محصول
+                            </div>
+                            <div class="buttons">
+                                <div class="right">
+                                    <span class="price">800 T</span>
+                                </div>
+                                <div class="left">
+                                    <div class="btn">
+                                        <a class="b-text" href="">علاقه  </a>
+                                        <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                    </div>
+                                    <div class="btn">
+                                        <a class="b-text" href=""> خرید</a>
+                                        <a class="b-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item " id="slide2">
-                    <img src="./photo/photo-1638389746430-82c12a2d0bb2.avif" alt="">
-                    <span style="color: black ;text-shadow: 2px 2px 6px black;">کیفیت صدایی که همیشه دنبالش بودید</span>
-                </div>
-                <div class="item " id="slide3">
-                    <img src="./photo/premium_photo-1681822341659-723f236cec21.avif" alt="">
-                    <span style="color: black; text-shadow: 2px 2px 6px white">رویاهاتو با صدای بلند دنبال کن</span>
-                </div>
-            </div>
-            <div class="button">
-                <I onclick="setSlide('slide1',1)" class="fas fa-circle"></I>
-                <I onclick="setSlide('slide2',2)" class="fas fa-circle"></I>
-                <I onclick="setSlide('slide3',3)" class="fas fa-circle"></I>
-            </div>
-        </section>
-    </header>
-    <!--End of Navigation and slider-->
+            </section>
+        </main>
+        <!--End of Card-->
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./Shop.js"></script>
-</body>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+    
