@@ -297,6 +297,7 @@ header nav .navl .login a
 
 .supperOfferBox
 {
+    background-color: rgba(47, 23, 48, 0.29);
     text-align: center;
     box-shadow: 0px 2px 8px 0px rgba(255, 255, 255, 0.788);
     border-radius: 5px;
@@ -376,7 +377,7 @@ header nav .navl .login a
 
 .supperOfferBox .body .spesification .reminderTime
 {
-    color: #333;
+    color: #95a1a0;
     font-size: 0.9em;
 }
 
